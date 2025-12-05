@@ -1,0 +1,979 @@
+We would like to build the folling project:
+
+### **Título**:
+
+**Comparação Gestão de Carteiras Tradicionais e Criptomoedas: Análise Quantitativa de Risco, Retorno e Diversificação nos Últimos Cinco Anos e Perspectivas Futuras**
+
+Objetivo:
+
+Realizar uma análise quantitativa comparativa entre a gestão de carteiras tradicionais e criptomoedas, focando em aspectos como risco, retorno e diversificação, com base nos dados dos últimos cinco anos e explorar perspectivas futuras.
+
+Um estudo empírico sobre a evolução do desempenho de carteiras com e sem criptomoedas, aplicando métodos estatísticos e modelos de previsão para avaliar o impacto dos criptoativos na diversificação e na eficiência dos portfólios.
+
+O objetivo deste trabalho é analisar a construção de duas carteiras de investimento com um valor inicial de 10.000€: uma composta por ativos tradicionais (ações, obrigações, etc.) e outra que inclui criptomoedas. O estudo irá comparar o desempenho histórico dessas carteiras ao longo dos últimos 5 a 10 anos, considerando a evolução dos ativos financeiros, o risco envolvido e os efeitos da diversificação. Além disso, será feita uma projeção para o futuro, considerando o comportamento atual do mercado e as previsões para as criptomoedas e outros ativos.
+
+Comecar um prototipo basico com 6meses e depois expandir para 1 ano e depois 2 anos e depois 5 anos e depois 10 anos.
+
+Temos um excell com um exemplo pratico dos calculos que podem ser efetuados inicialmente nesta pasta context.
+
+A ideia seria basear-se nestes calculos e expandir para os anos seguintes e adicionar mais funcionalidades e melhorias.
+
+### **Metodologia**:
+
+1. **Análise Histórica**:
+    - **Seleção dos Ativos**: Definir um conjunto de ativos financeiros (ações de empresas de diversos setores, obrigações de governos ou empresas, ETFs, etc.) para a carteira sem criptomoedas e outro que inclua **Bitcoin**, **Ethereum** e talvez outras criptos relevantes.
+    - **Período de Análise**: Estudo do desempenho dos ativos selecionados nos últimos 5 a 10 anos (por exemplo, 2015-2025), utilizando dados históricos de preços e retorno.
+    - **Cálculos de Risco e Retorno**: Calcular o **retorno anualizado** de cada carteira, bem como o **risco** (volatilidade), e comparar os **índices de Sharpe** (relação risco-retorno), **drawdowns** e **coeficientes de correlação** entre os ativos.
+2. **Análise de Diversificação**:
+    - **Diversificação de Carteiras**: Avaliar como a inclusão de criptomoedas impacta a diversificação da carteira. Medir a **correlação** entre os ativos tradicionais e as criptos para verificar se a diversificação melhora (ou piora) o perfil de risco-retorno da carteira.
+    - **Teste de Monte Carlo ou Simulação de Carteira**: Usar simulações para avaliar como as carteiras podem se comportar em diferentes cenários de mercado.
+3. **Projeções Futuras**:
+    - **Previsões do Mercado de Criptomoedas**: Considerar as previsões de especialistas e dados de mercado sobre o comportamento das criptomoedas nos próximos anos, como a adoção institucional crescente, os **regulamentos** da UE, e a evolução da **blockchain**.
+    - **Cenários de Preço**: Desenvolver diferentes cenários de preço para as criptomoedas e ativos tradicionais (otimista, pessimista, e moderado).
+    - **Modelagem de Risco e Retorno para o Futuro**: Utilizar modelos como **ARIMA** ou **GARCH** para prever os preços dos ativos e ajustar as carteiras.
+4. **Análise Comparativa**:
+    - Comparar o **desempenho** das duas carteiras no presente (2025) e suas **projeções futuras** para os próximos 5-10 anos.
+    - Avaliar como **inclusão de criptos** pode alterar o **perfil de risco e retorno** da carteira, especialmente em períodos de alta volatilidade.
+
+### **Fontes de Pesquisa**:
+
+- **Yahoo Finance**, **CoinMarketCap** e [**Investing.com**](http://investing.com/) para dados históricos de ativos tradicionais e criptomoedas.
+- **Banco de Portugal** e **CMVM** para informações sobre regulação e dados financeiros.
+- **Relatórios de mercado** de **fundos de investimento** e **gestores de ativos**.
+- Artigos acadêmicos sobre **gestão de carteiras** (SSRN, JSTOR, ResearchGate), e sobre a **correlação** entre criptos e ativos tradicionais.
+
+para alem desses temos as seguintes sugestoes:
+
+arquivo.pt/ 
+   Bibliotecas (ISEG; ISCTE; UMinho; FEUP; FEUC; UBI) 
+   doaj.org/ 
+   econpapers.repec.org/ 
+   links.jstor.org 
+   onlinelibrary.wiley.com/ 
+   orcid.org/ (Já estou registado) 
+   ourworldindata.org/ 
+   scholar.google.pt/ 
+   scielo.org/ 
+   www.academia.edu/ 
+   www.bnportugal.pt 
+   www.b-on.pt 
+   www.ebscohost.com 
+   www.ieee.org 
+   www.nber.org 
+   www.proquest.com/ 
+   www.race.nuca.ie.ufrj.br 
+   www.rcaap.pt 
+   www.researchgate.net/ 
+   www.scielo.oces.mctes.pt/ 
+   www.sciencedirect.com/ 
+   www.scopus.com (Só acesso da ESTGD) 
+   www.sgo.sagepub.com/ 
+   www.springer.com 
+   www.ssrn.com 
+   www.umi.com/proquest
+
+   bpstat.bportugal.pt/ - Central de Balanços do Banco de Portugal 
+  data.worldbank.org/ 
+  ec.europa.eu/eurostat 
+  europeanvaluesstudy.eu 
+  gee.gov.pt/pt/ 
+  irn.justica.gov.pt/ 
+  pt.knoema.com/ 
+  sabi.informa.es (SABI) 
+  unctadstat.unctad.org/ 
+  www.apb.pt 
+  www.apfipp.pt 
+  www.arcratings.com/uk 
+  www.asf.com.pt 
+  www.bancobpi.pt 
+  www.base.gov.pt/base4 
+  www.bportugal.pt 
+  www.bvdinfo.com/en-gb  
+  www.cmvm.pt 
+  www.dinheirovivo.pt 
+  www.economias.pt 
+  www.euronext.com/en/markets/lisbon 
+  www.financaspessoais.pt 
+  www.gemconsortium.org/ 
+  www.globalreporting.org  
+  www.iapmei.pt 
+  www.iberinform.pt/ 
+  www.igcp.pt 
+  www.ine.pt 
+  www.informadb.pt 
+  www.informadb.pt/ 
+  www.investidor.pt/ 
+  www.msci.com/ 
+  www.nvalores.pt 
+  www.oecd.org/ 
+  www.ourworldindata.org/ 
+  www.pordata.pt 
+  www.racius.com 
+  www.rankia.pt/ 
+  yoursri.com/ - Fundos Socialmente Responsáveis 
+  https://finviz.com/ 
+  www.justetf.com 
+  https://finance.yahoo.com/
+
+Gostariamos de criar uma especie de crawler que efetue a coleta de dados de ativos financeiros e criptomoedas e crie um banco de dados com esses dados para que possamos realizar analises e predicoes, e no final ter um dataset para analises e predicoes.
+Em relacao a essas fontes seria bom ter um crawler que coletasse os dados de ateh talvez 3 fontes diferentes para o msm ativo financeiro ou criptomoeda de forma a ter uma forma de validar os dados coletados. Por exemplo, para o ativo financeiro Apple Inc. (AAPL), coletaríamos os dados de preços e volumes de Yahoo Finance, Google Finance e Investing.com criando um crawler para cada fonte e depois unificando os dados coletados. 
+Apos a colecta fazer a limpeza e validacao dos dados coletados e criar um banco de dados com esses dados para que possamos realizar analises e predicoes, e no final ter um dataset para analises e predicoes.
+
+O excell que esta na pasta context e um exemplo pratico dos calculos que podem ser efetuados inicialmente nesta pasta context seria para depois criar funcoes em python que possam ser usadas para realizar analises e predicoes. Criando uma especie de utilitario que possa ser usada para realizar analises e predicoes nesse projecto e noutros.
+
+Eh essencial tambem documentar o projecto e as funcoes que serao criadas para que possamos ter uma forma de entender como as coletas e analises foram feitas e como as predicoes foram feitas.
+
+Se possivel usar o python para criar um crawler que colete os dados de ativos financeiros e criptomoedas e crie um banco de dados com esses dados e talvez utilizar tecnicas de pesquisa semantica para coletar dados de fontes externas e criar um banco de dados com esses dados.
+
+Tentar incluir metados relevantes para cada informacao colectada de forma a ter uma rastreabilidade dos dados e das transformacoes que foram feitas.
+
+Criando uma especie de ETL (Extract, Transform, Load) para coletar, transformar e carregar os dados coletados.
+
+
+Mais contexto a seguir:
+
+### **1. Definindo os Ativos para as Carteiras:**
+
+Primeiro, vamos precisar **definir quais ativos serão incluídos nas duas carteiras**: uma com **criptomoedas** e outra sem. Vamos assumir o valor inicial de **10.000€** para cada carteira.
+
+### **Carteira Tradicional (sem criptomoedas)**:
+
+A carteira tradicional pode ser composta por **ativos tradicionais**, como:
+
+- **Ações**: Empresas de setores diversos (tecnologia, saúde, consumo, energia). Pode-se escolher ações de grandes empresas com **bom histórico de valorização** e alguma estabilidade (por exemplo, **Microsoft**, **Apple**, **Google**, **Amazon**).
+- **Obrigações**: Podem ser incluídas **obrigações governamentais** (Portugal, EUA, etc.) ou **obrigações corporativas** de empresas bem avaliadas.
+- **ETFs (Exchange Traded Funds)**: Para diversificação, você pode incluir ETFs que acompanham **índices de ações** ou **índices de obrigações**, como o **SP500** ou **Euro Stoxx 50**.
+- **Imóveis ou Fundos Imobiliários**: Caso se queira incluir um ativo mais estável com potencial de valorização e renda passiva.
+
+### **Carteira com Criptomoedas**:
+
+Aqui, podemos incluir **Bitcoin** (BTC) e **Ethereum** (ETH), que são as criptos mais estabelecidas e populares. Outras opções podem ser exploradas dependendo do perfil da pesquisa:
+
+- **Bitcoin** (BTC) – A principal criptomoeda e a mais utilizada como reserva de valor.
+- **Ethereum** (ETH) – Famosa pela sua funcionalidade em contratos inteligentes e a crescente adoção no ecossistema DeFi (Finanças Descentralizadas).
+- **Outras Criptos**: Pode-se também considerar a inclusão de outras altcoins relevantes, como **Binance Coin** (BNB), **Solana** (SOL), ou **Cardano** (ADA), que têm mostrado promissora valorização e adoção no mercado.
+
+---
+
+### **2. Metodologia da Revisão da Literatura:**
+
+A revisão da literatura irá fornecer o **fundamento teórico** para o seu estudo comparativo entre carteiras com e sem criptomoedas. A metodologia para essa revisão precisa ser clara e sistemática para que você consiga extrair os pontos mais relevantes para o seu trabalho. Vamos dividir essa metodologia em etapas:
+
+### **2.1. Identificação das Fontes de Pesquisa**:
+
+A revisão da literatura deve ser realizada a partir de **fontes acadêmicas** e **relatórios financeiros confiáveis**. Algumas fontes possíveis:
+
+- **Bases de Dados Acadêmicas**:
+    - **Google Scholar** (scholar.google.pt)
+    - **JSTOR** e **SSRN** (para artigos acadêmicos)
+    - **ResearchGate** e **Academia.edu** (para papers de pesquisadores)
+    - **Wiley Online Library** e **ScienceDirect** (artigos de finanças e gestão de carteiras)
+    - **DOAJ** (Directory of Open Access Journals) para periódicos abertos.
+- **Relatórios de Instituições Financeiras**:
+    - Relatórios do **Banco de Portugal** e da **CMVM** sobre regulação e tendências de criptomoedas em Portugal.
+    - Publicações do **FMI** (Fundo Monetário Internacional), **Banco Central Europeu** e **OECD** sobre mercados financeiros e criptomoedas.
+    - Relatórios de consultorias financeiras (ex.: **PwC**, **McKinsey**, **Deloitte**) sobre criptomoedas, regulação e tendências de mercado.
+- **Livros e Capítulos**:
+    - Escolher livros sobre **gestão de carteiras**, **análise de risco**, **finanças comportamentais**, **criptomoedas**, **blockchain**, etc.
+    - Capítulos que tratam da **evolução do mercado de criptomoedas**, da **adoção institucional**, e do impacto das criptos em **mercados financeiros tradicionais**.
+
+### **2.2. Critérios de Seleção de Artigos**:
+
+- **Ano de publicação**: Dê preferência a artigos mais recentes (de 2015 em diante), especialmente devido à rápida evolução das criptomoedas.
+- **Relevância para o tema**: Priorizar artigos que abordam o impacto das criptomoedas em **gestão de carteiras** ou **mercados financeiros**, análises de **risco e retorno**, e **diversificação com criptos**.
+- **Qualidade acadêmica**: Selecionar artigos revisados por pares, relatórios de **instituições financeiras** reconhecidas, e estudos de **casos reais** de implementação de criptos em carteiras.
+
+### **2.3. Etapas da Revisão da Literatura**:
+
+1. **Introdução à Revisão**:
+    - Explicar a importância do tema dentro da área de **mercados financeiros** e **gestão de carteiras**.
+    - Apresentar o crescimento do interesse por **criptomoedas** como uma nova classe de ativos.
+2. **Histórico das Criptomoedas e Mercado Financeiro**:
+    - Explorar a evolução das **criptomoedas** desde o lançamento do **Bitcoin** em 2009 até o cenário atual.
+    - Analisar as principais características das criptos (descentralização, blockchain, volatilidade, etc.) e como elas afetam os mercados financeiros tradicionais.
+3. **Criptomoedas e Gestão de Carteiras**:
+    - Revisar estudos que exploram a **incorporação de criptomoedas** em carteiras de investimento.
+    - Discutir a teoria sobre **diversificação** com criptos e o impacto sobre o **risco total** da carteira.
+    - Analisar artigos que tratam do **perfil de risco das criptos** (alta volatilidade, risco regulatório, etc.) e como isso impacta o retorno da carteira.
+4. **Estudos de Caso e Comparações**:
+    - Incluir estudos que mostram **desempenhos históricos** de carteiras com e sem criptos, comparando o **retorno** e a **volatilidade**.
+    - Considerar **exemplos práticos** de gestores de fundos que adotaram ou rejeitaram criptomoedas nas suas carteiras.
+5. **Impacto da Regulação e Adoção Institucional**:
+    - Explorar como a **regulação** das criptomoedas (especialmente na **UE** e **Portugal**) está moldando o comportamento dos investidores e a integração das criptos em carteiras.
+    - Analisar as tendências de **adoção institucional** de criptomoedas (ex.: empresas como **Tesla**, **MicroStrategy**) e como isso pode afetar os mercados financeiros nos próximos anos.
+6. **Previsões Futuras**:
+    - Considerar artigos e relatórios que abordam o futuro das criptomoedas no contexto financeiro, explorando cenários de **adoção massiva** ou **desregulação**.
+
+### **2.4. Síntese e Identificação de Lacunas**:
+
+Ao final da revisão, é importante fazer uma **síntese dos principais achados**, destacando:
+
+- O impacto das criptomoedas na **gestão de carteiras e diversificação**.
+- A relação entre **risco e retorno** das criptos comparado a outros ativos tradicionais.
+- **Lacunas na pesquisa**: Quais aspectos das criptomoedas ainda não foram suficientemente estudados, especialmente no contexto de **gestão de carteiras**?
+
+---
+
+### **3. Continuação da Metodologia para Análise Empírica**:
+
+Depois de ter a revisão da literatura bem estruturada, você passará para a análise empírica, onde vai construir as duas carteiras e calcular os **índices de rentabilidade** e **risco** de cada uma delas. Vou te ajudar a detalhar isso conforme avançarmos.
+
+---
+
+**Próximos Passos:**
+
+1. Definir os **ativos** e a **alocação inicial** de cada carteira.
+2. Coletar os **dados históricos** de preços (ações, criptos, ETFs, etc.) para os últimos 5 a 10 anos.
+3. Começar a **revisão da literatura** com os artigos e fontes que você já tem à disposição.
+
+O que acha de começarmos a organizar a parte da **revisão da literatura** e **busca de fontes**?
+
+Ótimo — abaixo segue uma resposta **detalhada e orientada para pesquisa acadêmica** sobre **modelos e métodos** que pode utilizar no seu estudo (avaliação histórica/quantitativa e análise preditiva), além de **orientações práticas** para coleta de séries temporais, engenharia de features, implementação, validação (backtesting / cross-validation temporal), e aplicações de **machine learning / fine-tuning / transfer learning**. Vou indicar concretamente classes de modelos, quando cada uma é apropriada e quais bibliotecas/ferramentas são recomendadas.
+
+> Citação das referências principais usadas para fundamentar as recomendações: páginas e revisões sobre portfólios de Markowitz, modelos de volatilidade GARCH, ARIMA para séries temporais, revisões recentes de deep learning em previsão financeira, e Prophet (ferramenta prática de forecasting).
+> 
+
+---
+
+# 1. Modelos para avaliação **quantitativa / histórica**
+
+Esses são os métodos que você deve aplicar primeiro para caracterizar e comparar carteiras no período histórico (descritivo, risco, eficiência, diversificação).
+
+**Métricas e técnicas descritivas (obrigatórias)**
+
+- Estatísticas básicas: média de retornos, desvio-padrão, skewness, kurtosis.
+- Medidas de risco: VaR, CVaR (expected shortfall).
+- Indicadores de desempenho: Sharpe ratio, Sortino ratio, Information ratio, beta.
+- Correlações e matrizes de covariância (janelas móveis), coeficiente de correlação dinâmico.
+
+**Otimização de carteiras**
+
+- **Mean–Variance (Markowitz)** — construção da fronteira eficiente, alocações de mínima variância e máxima Sharpe. Bom ponto de partida para comparar carteiras com/sem cripto. (base clássica e interpretável).
+- **Black-Litterman** — quando quiser incorporar opiniões (views) e evitar alocações extremas decorrentes de estimativas de retorno instáveis.
+- **Optimização com restrições e medidas robustas**: otimização com CVaR como objetivo, penalizações L1/L2 para estabilidade, robust optimization para incertezas em covariâncias.
+
+**Modelos de risco e volatilidade**
+
+- **GARCH family (GARCH, EGARCH, TGARCH, etc.)** para modelar volatilidade condicional e heterocedasticidade em retornos — útil para entender clustering de volatilidade em cripto vs ativos tradicionais.
+- Modelos de volatilidade estocástica ou filtros de Kalman para séries com ruído.
+
+**Testes econométricos e multivariados**
+
+- **VAR / VECM** — para dinâmica conjunta entre retornos de diferentes ativos (causalidades, choque-transmissão).
+- **Cointegração** — avaliar relações de longo prazo entre ativos (útil para pares trading ou avaliar integração entre cripto e índices tradicionais).
+- **Testes de mudança de regime (Markov switching)** — detectar regimes de baixa/alta volatilidade que alteram correlações e eficiência de diversificação.
+
+**Simulações e avaliação de portfólio**
+
+- **Simulação de Monte Carlo** (cenários de retorno/volatilidade) para stress testing.
+- **Bootstrap block** para estimativas de incerteza das métricas de retorno e risco.
+
+---
+
+# 2. Modelos para **análise e avaliação preditiva**
+
+Aplicados quando você quer prever retornos, volatilidade, correlações, ou sinalizar alocações futuras.
+
+**Modelos estatísticos clássicos de séries temporais**
+
+- **ARIMA / SARIMA** — forecasting de séries de preço/retorno (bom para padrões lineares e sazonalidade).
+- **State-space / Kalman filter** — estimativas online e modelagem de séries com ruído e tendências mutáveis.
+- **GARCH/EGARCH** para previsão de volatilidade (importante para risco e sizing de posições).
+
+**Modelos multivariados**
+
+- **VAR** para previsão conjunta; **DCC-GARCH** para volatilidade condicional e correlações dinâmicas.
+
+**Modelos de aprendizado de máquina / data science**
+
+- **Tree-based**: Random Forest, XGBoost, LightGBM — frequentemente fortes em previsão de curto prazo quando há features bem construídas (indicadores técnicos, macro, volume, on-chain para cripto).
+- **SVM / Elastic Net / Regression regularizada** para baselines regulares e interpretáveis.
+- **Modelos de séries temporais deep learning**:
+    - **LSTM / GRU** — projetados para sequências; bons para dependências temporais não lineares.
+    - **Temporal Convolutional Networks (TCN)** — alternativa a RNN com vantagens de paralelismo.
+    - **Transformers e variantes para séries temporais (Informer, Autoformer, etc.)** — promissores para janelas longas e atenção a padrões sazonais/long-range.
+- **Modelos híbridos / ensemble**: decompor série (ruído+tendência) e aplicar modelos diferentes em cada componente (ex.: VMD + LSTM, ARIMA + XGBoost).
+
+**Modelos de previsão de risco e decisão**
+
+- **Modelos para VaR/CVaR preditivos**, calibrados via GARCH ou modelos ML que preveem distribuição condicional de retornos.
+- **Decision-focused learning**: treinar previsores (ML) com objetivo final de otimização de portfólio (em vez de minimizar apenas MSE), para alinhar previsões com decisões ótimas. (abordagem recente em pesquisa).
+
+---
+
+# 3. Coleta e preparação de séries temporais (prática)
+
+**Dados brutos a coletar**
+
+- Preços (OHLC), volumes, retornos logarítmicos, high/low, spreads.
+- Dados de renda fixa / taxas / inflação / câmbio / índices de mercado / fatores de risco (fama-french) para análise comparativa.
+- Para cripto: on-chain metrics (hashrate, active addresses, exchange flows), dados de derivativos (open interest), e book/ordens se disponíveis.
+
+**Frequência & ajuste**
+
+- Escolha frequência coerente com objetivo: diário é padrão; intradiário (minutos) para estratégias de curto prazo.
+- Trabalhe normalmente com **retornos logarítmicos** para modelagem; ajuste por splits/dividends para ações.
+
+**Limpeza e engenharia**
+
+- Tratar missing values (interpolação cuidadosa), remover/estudar outliers (não apagá-los sem justificar — em cripto outliers podem ser informação).
+- Construir features: médias móveis, RSI, MACD, volatilidade histórica, returns lagados, volumes normalizados, indicadores macro e sinais de sentimento.
+- Normalização / transformação (Box-Cox, log) quando necessário.
+
+**Problemas comuns**
+
+- **Non-stationarity** — teste ADF/KPSS e diferenciar quando necessário para ARIMA; para ML muitas vezes usar janelas / features estacionárias.
+- **Look-ahead bias / data leakage** — garantir que no backtest os modelo só usem informações disponíveis até o tempo t.
+- **Survivorship bias** em bases de ações (usar universo histórico completo).
+
+---
+
+# 4. Implementação prática — bibliotecas e workflow recomendado
+
+**Linguagens e bibliotecas**
+
+- **Python**: `pandas`, `numpy`, `statsmodels` (ARIMA, econometria), `arch` (GARCH), `scikit-learn` (ML clássicos), `xgboost`/`lightgbm`, `prophet` (Meta Prophet), `pytorch` / `tensorflow` (deep learning), `pyfolio`/`empyrical` (métricas de performance), `bt` / `ffn` (backtesting simples).
+- **R**: excelente para econometria clássica (forecast, rugarch, vars).
+
+**Pipeline sugerido**
+
+1. Ingestão: APIs (exchanges, Yahoo/Alpha Vantage/Quandl/CCXT), armazenamento em timeseries DB ou parquet.
+2. Preprocess: limpeza, alinhamento por timestamp, ajuste por fuso.
+3. Feature eng.: calculo de indicadores, normalização, janelas.
+4. Modelagem histórica: estatísticas, Markowitz, Black-Litterman, backtest.
+5. Modelagem preditiva: treino/validação com time-series CV (walk-forward), hyperparameter tuning (optuna).
+6. Avaliação: métricas de previsão e métricas financeiras (Sharpe do portfólio resultante, drawdown, turnover).
+7. Sensitivity / stress tests e interpretação (SHAP para modelos árvore).
+
+**Validação temporal**
+
+- **Walk-forward validation**: dividir em janelas expansivas/rolantes; é o padrão para séries temporais.
+- Evite K-fold aleatório — não respeita dependência temporal.
+
+---
+
+# 5. Machine learning avançado, fine-tuning e transfer learning
+
+**Quando usar ML profundo**
+
+- Há sinais não lineares complexos, múltiplas séries e features (on-chain + mercado + macro).
+- Para prever volatilidade dinâmica ou padrões seqüenciais com memória longa.
+
+**Fine-tuning / Transfer learning**
+
+- **Pré-treinamento**: treinar modelos (ex.: Transformers, LSTM) em grandes conjuntos de séries financeiras (ou múltiplos ativos) para que aprendam representações temporais gerais.
+- **Fine-tuning**: adaptar o modelo pré-treinado a um ativo/mercado específico (por ex., cripto) com poucos dados rotulados.
+- **Self-supervised pretext tasks**: contrastive learning, masked forecasting, TS2Vec e outras abordagens permitem pré-treino sem rótulos e depois fine-tune para previsão específica. Essas técnicas estão ganhando espaço na literatura recente de séries temporais.
+
+**Práticas recomendadas**
+
+- Usar **ensembles** (XGBoost + LSTM + ARIMA) porque combinam sinais de curto prazo e tendências.
+- Para deep learning, cuidado com overfitting (pequenas amostras históricas); use dropout, regularização, early stopping e validação walk-forward.
+- Interpretação: aplicar SHAP/LIME para modelos árvore; para redes, analisar importância de features, sensibilidade temporal.
+
+---
+
+# 6. Métricas e avaliação final (financeiras + preditivas)
+
+- **Previsão**: MSE, MAE, MAPE (com cuidado para retornos que cruzam zero), hit rate/directional accuracy.
+- **Financeiras** (mais importantes para impacto prático): retorno anualizado, volatilidade, Sharpe, Sortino, max drawdown, turnover, VaR/CVaR.
+- **Estabilidade**: teste de robustez em janelas diferentes, bootstrap de portfólios, análise de desempenho por regime.
+
+---
+
+# 7. Recomendações de leitura e next steps práticos
+
+1. Comece com **análise descritiva** e Markowitz/Black-Litterman para ter baseline de alocação.
+2. Modele **volatilidade** com GARCH para inputs de risco e VaR.
+3. Para previsão de séries tente ARIMA/Prophet como baseline e depois compare com ML (XGBoost) e deep learning (LSTM/Transformer).
+4. Use **walk-forward** para validação e avalie o impacto das previsões na otimização final (decision-focused evaluation).
+
+---
+
+Se quiser eu posso **fazer um plano detalhado de implementação** com (a) esquema de coleta de dados e fontes/API recomendadas, (b) pipeline de features, (c) código-esqueleto em Python para: ingestão, feature engineering, estimativa GARCH/ARIMA, otimização Markowitz e backtest walk-forward, e (d) um comparativo experimental sugerido (que modelos treinar e como comparar resultados financeiros). Quer que eu gere esse plano e um **notebook Python esqueleto** para começar?
+
+---
+
+Pronto — criei um **notebook/esqueleto (código Python)** no canvas chamado **"Notebook Gestao Carteiras Criptos"** com o plano de implementação, funções-esqueleto e checklist para você começar a implementar e testar (coleta, features, modelos clássicos e preditivos, backtest walk-forward, ML/DL e avaliação).
+
+Abra o arquivo no canvas para ver todo o código e copiar para um Jupyter Notebook.
+
+```python
+"""
+Notebook esqueleto: Gestão de Carteiras Tradicionais e Criptoativas
+Conteúdo:
+  - Plano de implementação (coleta, features, modelos, validação)
+  - Funções esqueleto para ingestão de dados (APIs), limpeza e engenharia de features
+  - Esqueleto para modelos clássicos (ARIMA, GARCH), otimização Markowitz, backtest walk-forward
+  - Esqueleto para modelos ML (XGBoost), DL (LSTM) e sugestão de pré-treino/fine-tuning
+  - Avaliação (métricas preditivas e métricas financeiras)
+
+ATENÇÃO: Este arquivo é um esqueleto. Substitua as chamadas de API, caminhos e parâmetros conforme necessário.
+Recomendações de ambiente (conda/venv):
+  - Python >=3.9
+  - bibliotecas: pandas, numpy, scipy, statsmodels, arch, scikit-learn, xgboost, pytorch, cvxpy, empyrical, matplotlib, optuna
+
+Uso: transformar em Jupyter (.ipynb) se desejar executar passo-a-passo.
+"""
+
+# -------------------------------
+# 0) Plano resumido (implementação)
+# -------------------------------
+# 1) Coleta de dados:
+#    - Ações/Índices: yfinance / Alpha Vantage / Quandl
+#    - Criptoativos: CCXT / CoinGecko / CryptoCompare / exchanges APIs (Binance, Coinbase)
+#    - Macros: FRED / Banco Central / OECD
+#    - On-chain: Glassnode / Kaiko / Dune (se disponível)
+# 2) Preprocessamento:
+#    - alinhar timestamps, tratar missing, calcular retornos log, ajustar frações
+#    - frequência: diário (padrão) ou intradiário conforme objetivo
+# 3) Engenharia de features:
+#    - indicadores técnicos (MA, EMA, RSI, MACD), volatilidade histórica, volume, momentum
+#    - fatores macro, medidas on-chain
+# 4) Modelagem histórica (baseline):
+#    - estatísticas descritivas, matriz de covariância móvel, Markowitz, Black-Litterman
+#    - GARCH para volatilidade condicional, DCC para correlações dinâmicas
+# 5) Modelagem preditiva:
+#    - ARIMA/Prophet/ETS; XGBoost; LSTM/Transformer
+#    - treino com validação walk-forward, hiperparam tuning (optuna)
+# 6) Backtest & avaliação:
+#    - usar walk-forward, métricas financeiras (Sharpe, Drawdown, VaR/CVaR)
+#    - comparar carteiras: sem cripto vs com cripto (diferentes alocações)
+
+# -------------------------------
+# 1) Imports e configurações
+# -------------------------------
+import os
+import numpy as np
+import pandas as pd
+from typing import List, Dict, Tuple, Any
+
+# libs opcionais (instalar conforme necessidade)
+# import yfinance as yf
+# import ccxt
+# import statsmodels.api as sm
+# from arch import arch_model
+# from sklearn.ensemble import RandomForestRegressor
+# import xgboost as xgb
+# import torch
+# import cvxpy as cp
+
+# -------------------------------
+# 2) Funções de ingestão (esqueleto)
+# -------------------------------
+
+def fetch_price_yfinance(tickers: List[str], start: str, end: str, interval: str = '1d') -> pd.DataFrame:
+    """Exemplo: baixar preços via yfinance.
+    Substitua pela API desejada (AlphaVantage, CCXT para cripto, etc.).
+
+    Retorna um DataFrame com MultiIndex: ['Date', 'Ticker'] ou tabela pivotada.
+    """
+    # TODO: implementar com yfinance
+    raise NotImplementedError("Implementar fetch via yfinance / outra API e tratar limites de rate.")
+
+def fetch_crypto_coingecko(slugs: List[str], vs_currency: str, start: str, end: str) -> pd.DataFrame:
+    """Placeholder para coleta de dados de cripto via CoinGecko ou CCXT.
+    Recomenda-se cache local em parquet.
+    """
+    # TODO: implementar
+    raise NotImplementedError
+
+# -------------------------------
+# 3) Preprocessamento e align
+# -------------------------------
+
+def prepare_timeseries(df_prices: pd.DataFrame) -> pd.DataFrame:
+    """Entrada: DataFrame com colunas ['Date','Ticker','Close'] ou pivotado.
+    Saída: DataFrame pivotado com colunas por ticker e index DatetimeIndex.
+    Calcular retornos logarítmicos.
+    """
+    # Exemplo robusto para dados já pivotados
+    if isinstance(df_prices.index, pd.DatetimeIndex):
+        pivot = df_prices.copy()
+    else:
+        pivot = df_prices.pivot(index='Date', columns='Ticker', values='Close')
+        pivot.index = pd.to_datetime(pivot.index)
+    # ordenar e forward/backfill com cuidado
+    pivot = pivot.sort_index()
+    # calcular retornos log
+    returns = np.log(pivot).diff().dropna()
+    return pivot, returns
+
+# -------------------------------
+# 4) Engenharia de features (exemplos)
+# -------------------------------
+
+def add_technical_indicators(price: pd.Series, windows: List[int] = [5, 21, 63]) -> pd.DataFrame:
+    """Retorna DataFrame com features técnicas básicas para uma série de preço.
+    - moving averages, momentum, rolling vol
+    """
+    df = pd.DataFrame({'close': price})
+    for w in windows:
+        df[f'ma_{w}'] = df['close'].rolling(window=w).mean()
+        df[f'mom_{w}'] = df['close'] / df['close'].shift(w) - 1
+        df[f'vol_{w}'] = df['close'].pct_change().rolling(window=w).std()
+    df = df.dropna()
+    return df
+
+# -------------------------------
+# 5) Modelos clássicos (esqueleto)
+# -------------------------------
+
+def markowitz_optimization(cov: np.ndarray, exp_returns: np.ndarray, target_return: float = None) -> np.ndarray:
+    """Resolver problema média-variância (fronteira eficiente) usando cvxpy ou solução analítica.
+    Retorna vetor de pesos.
+    """
+    # TODO: implementar com cvxpy ou closed-form quando sem restrições
+    raise NotImplementedError
+
+def compute_garch_volatility(returns: pd.Series) -> pd.Series:
+    """Placeholder para estimativa GARCH(1,1) de volatilidade condicional."""
+    # TODO: utilizar arch.arch_model(returns*100, vol='Garch', p=1, q=1)
+    raise NotImplementedError
+
+# -------------------------------
+# 6) Pipeline de backtest (walk-forward)
+# -------------------------------
+
+def walk_forward_backtest(prices: pd.DataFrame,
+                           lookback: int,
+                           rebalance_period: int,
+                           model_builder, # função que recebe dados de treino e retorna previsão/decisão
+                           optimizer,     # função que recebe previsões/inputs e retorna pesos
+                           initial_capital: float = 1_000_000) -> Dict[str, Any]:
+    """Estrutura de walk-forward validator e backtester.
+
+    Args:
+        prices: DataFrame pivotado com preços por ticker (index Datetime)
+        lookback: número de dias para usar como janela de treino
+        rebalance_period: quantos dias entre rebalanços
+        model_builder: função(train_prices) -> model_outputs
+        optimizer: função(model_outputs) -> portfolio_weights
+
+    Retorna dict com histórico de pesos, retornos, valor do portfólio.
+    """
+    dates = prices.index
+    n = len(dates)
+    current_capital = initial_capital
+
+    history = {
+        'dates': [],
+        'weights': [],
+        'portfolio_value': [],
+        'returns': []
+    }
+
+    for t in range(lookback, n, rebalance_period):
+        train_slice = prices.iloc[t - lookback:t]
+        test_slice = prices.iloc[t:t + rebalance_period]
+
+        # 1) treinar modelo / extrair inputs
+        model_outputs = model_builder(train_slice)
+        # 2) otimizar alocação
+        weights = optimizer(model_outputs)
+
+        # 3) aplicar pesos ao período de teste e registrar performance
+        # calcular retornos do portfólio entre t e t+rebalance_period
+        rets = np.log(test_slice).diff().dropna()
+        # portf_ret = (rets * weights).sum(axis=1)  # cuidado com alinhamento
+        # TODO: implementar cálculo correto com rebalance e turnover
+
+        history['dates'].append(dates[t])
+        history['weights'].append(weights)
+        history['portfolio_value'].append(current_capital)
+        history['returns'].append(None)  # preencher com cálculo real
+
+    return history
+
+# -------------------------------
+# 7) Modelos ML/DL (esqueleto)
+# -------------------------------
+
+def build_xgboost_model(X_train: pd.DataFrame, y_train: pd.Series, params: Dict = None):
+    """Esqueleto para treinar XGBoost para previsão de retorno/direção."""
+    # TODO: preparar DMatrix, treinar com early stopping, retornar booster
+    raise NotImplementedError
+
+def build_lstm_model(input_size: int, hidden_size: int = 64, n_layers: int = 2):
+    """Esqueleto de model LSTM com PyTorch para sequências de séries temporais."""
+    # TODO: definir classe nn.Module, função de treino e inferência
+    raise NotImplementedError
+
+# -------------------------------
+# 8) Avaliação (métricas)
+# -------------------------------
+
+def evaluate_portfolio(perf_series: pd.Series) -> Dict[str, float]:
+    """Calcular métricas financeiras: retorno anualizado, volatilidade, Sharpe, max drawdown."""
+    # perf_series: série de valores do portfólio ao longo do tempo
+    returns = perf_series.pct_change().dropna()
+    ann_return = (1 + returns).prod() ** (252 / len(returns)) - 1 if len(returns) > 0 else np.nan
+    ann_vol = returns.std() * np.sqrt(252)
+    sharpe = ann_return / ann_vol if ann_vol > 0 else np.nan
+
+    # max drawdown
+    cum = (1 + returns).cumprod()
+    peak = cum.cummax()
+    drawdown = (cum / peak - 1)
+    max_dd = drawdown.min()
+
+    return {
+        'annual_return': ann_return,
+        'annual_vol': ann_vol,
+        'sharpe': sharpe,
+        'max_drawdown': max_dd
+    }
+
+# -------------------------------
+# 9) Notas sobre pré-treino / transfer learning para séries temporais
+# -------------------------------
+# - Pré-treine um encoder (Transformer ou TCN) em muitos ativos para aprender representações
+# - Use tasks self-supervised: masked forecasting, next-step prediction, contrastive
+# - Fine-tune no ativo alvo com janelas menores
+# - Para cripto, considere pré-treinar em conjunto cripto+ativos tradicionais para reduzir viés
+
+# -------------------------------
+# 10) Checklist para experimentos e replicabilidade
+# -------------------------------
+# - configurar seed(s) globais
+# - versionar dados (hash ou salvar snapshot) para evitar problemas de rebuild
+# - salvar modelos, pesos e logs (MLflow ou simple file structure)
+# - documentar janelas de treino/teste e parâmetros de rebalance
+
+# -------------------------------
+# FIM do esqueleto
+# -------------------------------
+
+if __name__ == '__main__':
+    print('Este é um esqueleto de notebook para orientar a implementação.\n')
+    print('Abra este arquivo no editor do canvas e copie para um Jupyter Notebook para execução passo-a-passo.')
+
+```
+
+Quer que eu:
+
+1. Exporte esse esqueleto como **.ipynb** e gere um arquivo para download?
+2. Preencha alguma das funções (por ex. ingestão via yfinance / CoinGecko, Markowitz com cvxpy, ou um exemplo executável com dados sintéticos)?
+3. Gerei também um plano de experimentos detalhado (ex.: combinações de modelos, métricas e cronograma)?
+
+Escolha a opção (1), (2) — indicando qual função quer que eu implemente — ou (3).
+
+```python
+"""
+# 1) Configuração de Dados e Cenários
+# -------------------------------
+# - Universo de ativos: ações globais (S&P500, MSCI), ETFs, criptoativos (BTC, ETH, etc.)
+# - Frequência: diária (padrão), podendo incluir intradiária para análise de volatilidade
+# - Período: últimos 10 anos (ex: 2015–2025)
+# - Fontes: yfinance (ações), CoinGecko/CCXT (cripto), FRED (macro)
+# - Variáveis: preço de fechamento, volume, retornos log, volatilidade implícita, indicadores técnicos
+
+# -------------------------------
+# 2) Fases Experimentais
+# -------------------------------
+
+# Fase 1 — Análise Exploratória e Estatística Descritiva
+# -------------------------------------------------------
+# - Calcular estatísticas de retorno, volatilidade, skewness, kurtosis.
+# - Avaliar correlações dinâmicas entre ativos (rolling windows e heatmaps).
+# - Construir fronteira eficiente (Markowitz) com e sem criptoativos.
+
+# Fase 2 — Modelos de Volatilidade e Correlação Dinâmica
+# -------------------------------------------------------
+# - Aplicar GARCH(1,1) e EGARCH para volatilidade condicional de cada ativo.
+# - Implementar DCC-GARCH para correlações móveis.
+# - Medir impacto de períodos de stress (crises, bull/bear markets) na diversificação.
+
+# Fase 3 — Modelos de Previsão Preditiva
+# -------------------------------------------------------
+# - Modelos estatísticos: ARIMA, SARIMA, Prophet, VAR.
+# - Modelos de ML: RandomForest, XGBoost, LightGBM (predição de retorno/volatilidade).
+# - Modelos de Deep Learning: LSTM, GRU, Transformer para séries temporais multivariadas.
+# - Estratégia: walk-forward validation com janela de treino e teste móvel.
+# - Hiperparam tuning: Optuna, cross-validation temporal.
+
+# Fase 4 — Backtesting e Otimização de Carteiras
+# -------------------------------------------------------
+# - Simular rebalanceamentos periódicos (mensais/trimestrais).
+# - Métodos de otimização: Markowitz, Black-Litterman, Risk Parity, Mean-CVaR.
+# - Comparar carteiras: Tradicional vs Tradicional+Cripto.
+# - Avaliar métricas: retorno anualizado, volatilidade, Sharpe, Sortino, drawdown, turnover.
+
+# Fase 5 — Modelos Híbridos e Transfer Learning
+# -------------------------------------------------------
+# - Pré-treinar modelos LSTM/Transformer em múltiplas séries (ações + cripto) — self-supervised.
+# - Fine-tuning por classe de ativo.
+# - Avaliar se representações pré-treinadas melhoram a previsão de retorno/volatilidade.
+
+# -------------------------------
+# 3) Avaliação e Métricas
+# -------------------------------
+# - Predição:
+# * RMSE, MAE, R², MAPE (para retornos previstos)
+# * Accuracy, Precision, Recall (para direção de retorno)
+# - Carteira:
+# * Retorno anualizado, Volatilidade, Sharpe, Sortino
+# * Max Drawdown, Calmar Ratio, Value-at-Risk (VaR), CVaR
+# - Diversificação:
+# * Índice de Herfindahl-Hirschman (HHI)
+# * Diversificação efetiva (1 / Σw²)
+
+# -------------------------------
+# 4) Estrutura de Armazenamento e Reprodutibilidade
+# -------------------------------
+# - Usar MLflow para rastrear: datasets, parâmetros, métricas, artefatos e pesos de modelos.
+# - Salvar dados processados em formato Parquet.
+# - Definir semente global e versionar dados/modelos.
+
+# -------------------------------
+# 5) Cronograma de Execução (sugestão)
+# -------------------------------
+# Semana 1-2: coleta e limpeza de dados.
+# Semana 3-4: análise exploratória e estatística descritiva.
+# Semana 5-6: implementação dos modelos GARCH e Markowitz.
+# Semana 7-8: treino e validação dos modelos preditivos (ARIMA, ML, DL).
+# Semana 9: integração com backtest e análise de carteiras.
+# Semana 10: avaliação comparativa e relatório final.
+
+# -------------------------------
+# 6) Possibilidades de Extensão
+# -------------------------------
+# - Introduzir dados alternativos (on-chain, sentimento, macroeconômicos)
+# - Implementar ensemble de modelos (votação, stacking)
+# - Avaliar robustez a eventos extremos (stress testing)
+# - Simular impacto de custos de transação e liquidez
+# - Aplicar explainable AI (SHAP) para interpretar previsões
+```
+
+---
+
+Here is a structured guide to help you collect data and start processing for your research project comparing traditional portfolio management and cryptocurrencies, specifically focused on quantitative analysis of risk, return, and diversification across the last five to ten years:
+
+**1. Seleção dos Ativos**
+
+- For **traditional portfolios** (ações, obrigações, ETFs, etc.), select assets representing different sectors, countries, and types (equities, government/corporate bonds, main ETFs like MSCI World, S&P 500 ).
+- For **cryptocurrencies portfolios**, include Bitcoin , Ethereum , and potentially others like Tether, Binance Coin, Cardano or major Altcoins relevant for your scope.
+
+**2. Fontes e Métodos para Coleta de Dados Históricos**
+
+- **Ações/ETFs/Obrigações**:
+    - Download daily or monthly price data from sites like Yahoo Finance, FRED (St. Louis Fed), Kaggle, Finviz, FirstRateData, EODHD, and Investopedia. These sources provide open access API/downloadable CSVs for stocks, ETFs and bonds, some covering global exchanges and historical data spanning 15-30 years.[firstratedata+6](https://firstratedata.com/)
+- **Criptomoedas**:
+    - Use CryptoDataDownload, Kaggle, GitHub ETL repositories, or OANDA for downloadable CSVs on Bitcoin , Ethereum , and major altcoins, minute to daily granularity.[github+3](https://github.com/Gendo90/Crypto-Historical-Prices)
+- **Economic/Diversification Indices & Macroeconomic Background**:
+    - World Bank, Eurostat, MSCI, OECD, OurWorldInData for benchmarks like inflation, interest rates, policy backgrounds, and correlations.[eodhd](https://eodhd.com/financial-apis/stock-etfs-fundamental-data-feeds)
+
+**3. Etapas para Processar e Analisar os Dados**
+
+- **Preparação**:
+    - Download raw CSVs for each asset (actions, ETFs, bonds, cryptos) for the desired period (2015-2025).
+    - Standardize timeframes, clean for missing data, adjust for splits/dividends for equities.
+    - For portfolios, construct time-aligned datasets with returns, calculate percentage change, and align dates.
+- **Cálculos**:
+    - **Retorno anualizado**: Compute geometric average per year.
+    - **Risco/Volatilidade**: Calculate standard deviation of monthly/daily returns.
+    - **Sharpe Ratio**: Use risk-free rate benchmarks (e.g., US T-bill, Euro government bond) from FRED or ECB datasets.
+    - **Drawdown/Correlação**: Use running max/min algorithms and pairwise correlation computation among assets.
+- **Diversificação**:
+    - Analyze correlation matrices (traditional vs. crypto-augmented portfolios) to assess how the co-movements change.
+- **Simulações**:
+    - Employ portfolio simulation tools (Monte Carlo), available as Python packages (e.g., PyPortfolioOpt, pandas, numpy, matplotlib) for various allocation scenarios.
+
+**4. Sugestão de Fontes Adicionais & Pesquisa Bibliográfica**
+
+- Biblioteca digital, repositórios académicos, portais governamentais e base de dados científicas já listados (arquivo.pt, JSTOR, Springer, SSRN, ScienceDirect, DOAJ, ResearchGate, Scopus, ProQuest, etc.).
+- Específicos: Dissertações já concluídas sobre portfólios cripto/tradicionais em UMinho, UAveiro, Évora e Açores podem fornecer exemplos de metodologias e fontes de dados obtidos.[repositorium.sdum.uminho+5](https://repositorium.sdum.uminho.pt/bitstream/1822/83155/1/Bruno%20Filipe%20Carvalho%20Cunha.pdf)
+- Utilize APIs de bancos centrais ou reguladores para dados de obrigações e benchmarks europeus (bpstat.bportugal.pt, ECB, Eurostat).
+
+**5. Ferramentas para Coleta, Limpeza e Processamento**
+
+- Python/Jupyter Notebooks para download e processamento.
+- Análise estatística com pandas, numpy, scipy.
+- Visualização e simulações com matplotlib, seaborn, PyPortfolioOpt.
+
+**Resumo dos Principais Links e Ferramentas:**
+
+- Yahoo Finance, FRED, EODHD, FirstRateData, CryptoDataDownload, Kaggle (bases de dados financeiras históricas livres)
+- Repositórios acadêmicos para metodologia e benchmarks
+- APIs das plataformas: Alguns sites como EODHD, Yahoo, CryptoDataDownload têm suporte direto a API, facilitando atualização.
+
+Se desejar, posso listar exemplos de código Python para baixar, processar e analisar esses dados, ou ajudar a explorar APIs específicas — assim que escolher os ativos a pesquisar, o próximo passo é coletar e organizar os dados históricos conforme acima.[pages.stern.nyu+4](https://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/histretSP.html)
+
+1. [https://firstratedata.com](https://firstratedata.com/)
+2. https://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/histretSP.html
+3. https://www.kaggle.com/datasets/youssefelebiary/google-stock-prices-2015-2024
+4. https://eodhd.com/financial-apis/stock-etfs-fundamental-data-feeds
+5. https://fred.stlouisfed.org/categories/32255
+6. https://www.kibot.com/historical_data/All_ETFs_Historical_Intraday_Data.aspx
+7. https://www.investopedia.com/ask/answers/find-historical-stock-index-quotes/
+8. https://github.com/Gendo90/Crypto-Historical-Prices
+9. https://www.oanda.com/us-en/trade-tap-blog/asset-classes/crypto/oanda-bitcoin-price-history-key-market-events-data-charts-insights-volatility/
+10. https://www.kaggle.com/datasets/kapturovalexander/bitcoin-and-ethereum-prices-from-start-to-2023
+11. [https://www.cryptodatadownload.com](https://www.cryptodatadownload.com/)
+12. https://repositorium.sdum.uminho.pt/bitstream/1822/83155/1/Bruno%20Filipe%20Carvalho%20Cunha.pdf
+13. https://periodicos.fgv.br/rbfin/article/view/84354/80496
+14. https://core.ac.uk/download/614513459.pdf
+15. https://repositorium.sdum.uminho.pt/handle/1822/83155
+16. https://dspace.uevora.pt/rdpc/handle/10174/32711
+17. https://repositorio.uac.pt/entities/publication/5193d23e-b10d-4aae-ade2-3d36a7412af6
+18. https://www.ua.pt/file/RA_9171_A3ES.pdf
+19. https://www.pbs.up.pt/en/programas/innovation-digital-and-technology/
+20. https://www.ishares.com/us/insights/flow-and-tell-summer-recap-2025
+
+---
+
+Here are some reliable APIs for downloading historical financial asset data, covering stocks, ETFs, bonds, and cryptocurrencies. These are widely used in academic research, portfolio analysis, and quant projects:
+
+**1. Alpha Vantage**
+
+- Free tier available.
+- Provides historical and real-time data for stocks, ETFs, forex, and cryptocurrencies.
+- Returns data in CSV/JSON.
+- API is widely used in Python and other programming languages.
+- Website: [https://www.alphavantage.co](https://www.alphavantage.co/)
+
+**2. Finnhub**
+
+- Real-time and historical prices for stocks, forex, and cryptocurrencies.
+- Institutional-grade fundamental and alternative data.
+- Free API keys for research and educational use.
+- Website: [https://finnhub.io](https://finnhub.io/)
+
+**3. Twelve Data**
+
+- Extensive coverage: global stocks, ETFs, foreign exchange, and crypto.
+- Real-time and historical data, technical indicators, and economic stats.
+- Free tier available.
+- Website: [https://twelvedata.com](https://twelvedata.com/)
+
+**4. EOD Historical Data (EODHD)**
+
+- Comprehensive coverage: stocks, ETFs, mutual funds, indices, and more.
+- Historical prices (end-of-day, intraday), fundamental data, and financial news.
+- Free tier for limited use; student discounts.
+- Website: [https://eodhd.com](https://eodhd.com/)
+
+**5. Marketstack**
+
+- Real-time and historical data on global stocks, indices, ETFs, and commodities.
+- Lightweight JSON, good documentation, and developer tools.
+- Free for basic usage.
+- Website: [https://marketstack.com](https://marketstack.com/)
+
+**6. Financial Modeling Prep (FMP)**
+
+- Real-time and detailed historical price/financial statement data.
+- Covers US/global stocks, ETFs, financial ratios, and more.
+- Free public endpoints for many basic features.
+- Website: [https://financialmodelingprep.com](https://financialmodelingprep.com/)
+
+**7. CryptoDataDownload**
+
+- Free historical data for cryptocurrencies (major and minor coins).
+- Download as CSV for backtesting and portfolio research.
+- Website: [https://www.cryptodatadownload.com](https://www.cryptodatadownload.com/)
+
+**8. Tiingo**
+
+- High-quality historical price data, full coverage for equities, ETFs, and crypto.
+- Robust for quant/backtesting purposes.
+- Basic/free academic tier, commercial paid for higher volume.
+- Website: [https://www.tiingo.com](https://www.tiingo.com/)
+
+**Academic/Research Use:**
+
+- Most of the above offer free or discounted access for research/educational purposes.
+- For bulk/historical data, consult API limits and allowable download volumes.
+- Python libraries (requests, pandas-datareader, yfinance, etc.) integrate well with these APIs.
+
+These sources are suitable for your needs in constructing, backtesting, and simulating both traditional and crypto-inclusive portfolios.[alphavantage+6](https://www.alphavantage.co/)
+
+1. [https://www.alphavantage.co](https://www.alphavantage.co/)
+2. [https://eodhd.com](https://eodhd.com/)
+3. https://site.financialmodelingprep.com/developer/docs
+4. https://dev.to/williamsmithh/top-5-free-financial-data-apis-for-building-a-powerful-stock-portfolio-tracker-4dhj
+5. https://blog.apilayer.com/12-best-financial-market-apis-for-real-time-data-in-2025/
+6. [https://marketstack.com](https://marketstack.com/)
+7. [https://twelvedata.com](https://twelvedata.com/)
+8. [https://finnhub.io](https://finnhub.io/)
+9. https://www.reddit.com/r/webdev/comments/151zk8y/is_there_any_free_stock_market_api_that_allows/
+10. https://www.bavest.co/en/best-stock-market-apis-review
+11. https://blog.finexer.com/best-investment-data-apis-for-uk/
+12. https://www.tokenmetrics.com/blog/top-10-cryptocurrency-apis-2025
+13. [https://massive.com](https://massive.com/)
+14. https://www.reddit.com/r/investing/comments/100l6ld/what_are_some_good_financial_apis/
+15. https://brightdata.com/blog/web-data/best-stock-data-providers
+16. https://www.ksred.com/the-complete-guide-to-financial-data-apis-building-your-own-stock-market-data-pipeline-in-2025/
+17. https://www.finfeedapi.com/blog/best-api-for-stock-data
+
+---
+
+Here are some of the most **verified and widely used sources** for historical cryptocurrency price data—these are recognized by the academic, institutional, and professional research communities:
+
+**1. Crypto Data Download**
+
+- Free historical data across major and minor exchanges.
+- Daily, hourly, minute intervals, available as CSV files.
+- Frequently cited in academic and quant research for Bitcoin , Ethereum , and altcoins.
+- Website: [https://www.cryptodatadownload.com](https://www.cryptodatadownload.com/)
+
+**2. CoinAPI**
+
+- Aggregates data from 400+ exchanges, institutional-grade verified datasets.
+- CSV flat files available for tick-level and OHLCV historical prices.
+- Useful for backtesting, analytics, and simulations.
+- Website: https://www.coinapi.io/products/flat-files
+
+**3. CoinGecko**
+
+- Long track record, cited by >150M monthly users, industry and research.
+- API delivers real-time and historical price data for all major cryptocurrencies.
+- 99.9% uptime, comprehensive coverage, CSV exports, and well-maintained documentation.
+- Website: https://www.coingecko.com/en/api
+
+**4. CoinMarketCap**
+
+- Academic literature confirms CoinMarketCap is one of the "main 4 databases" scholars rely on for Bitcoin and altcoin data.
+- Data available via API and web dashboard with historical charts and downloads.
+- Website: https://coinmarketcap.com/api/
+
+**5. Kaggle Datasets**
+
+- Kaggle hosts vetted, large datasets for Bitcoin , Ethereum , and portfolios of the top 1000 coins—these datasets are often sourced from primary APIs and mirrored for research.
+- Daily, minute intervals, CSV download; used for peer-reviewed research.
+- Website: https://www.kaggle.com/datasets
+
+**6. Kaiko**
+
+- Leading provider of verified, exchange-level data to large institutional clients and research groups.
+- Advanced analytics, global coverage—professional paid service, but often referenced for quality and reliability.
+- Website: [https://www.kaiko.com](https://www.kaiko.com/)
+
+**7. CryptoQuant**
+
+- On-chain analytics, market data for exchanges, blockchains, and token analytics.
+- Used by institutional and professional investors/researchers.
+- Website: [https://cryptoquant.com](https://cryptoquant.com/)
+
+These data sources are recognized for their reliability, consistency, and use in peer-reviewed research and major industry analytics. For most academic or research needs, **Crypto Data Download, CoinGecko, CoinAPI, and CoinMarketCap** provide robust free access, while Kaiko and CryptoQuant are best for institutional scale or advanced analytics and have paid options.[cryptodatadownload+6](https://www.cryptodatadownload.com/)
+
+1. [https://www.cryptodatadownload.com](https://www.cryptodatadownload.com/)
+2. https://www.coinapi.io/products/flat-files
+3. https://www.coingecko.com/en/api
+4. https://www.sciencedirect.com/science/article/abs/pii/S1057521922000369
+5. [https://coinmarketcap.com](https://coinmarketcap.com/)
+6. https://coinmarketcap.com/api/
+7. [https://www.kaiko.com](https://www.kaiko.com/)
+8. https://www.kaggle.com/datasets/mczielinski/bitcoin-historical-data
+9. [https://tardis.dev](https://tardis.dev/)
+10. https://www.opendatabay.com/data/financial/09303499-f4aa-4e82-9aa5-ea9411881fb0
+11. [https://cryptoquant.com](https://cryptoquant.com/)
+12. https://www.coingecko.com/learn/download-bitcoin-historical-data
+13. https://www.tokenmetrics.com/blog/free-apis-historic-price-data-crypto-research
+14. [https://www.coinapi.io](https://www.coinapi.io/)
+15. https://www.cryptodatadownload.com/data/
+16. https://data.coindesk.com/trade-data
+17. https://www.bitget.com/price/%F0%9F%8D%8C%F0%9F%8D%8C%F0%9F%8D%8C/historical-data
+18. https://www.reddit.com/r/algotrading/comments/1gnz02l/how_to_find_an_reliable_api_for_historical_stock/
+19. https://www.coinex.com/ach/markets/history
+20. https://www.kaggle.com/datasets/usamabuttar/cryptocurrency-historical-prices-updated-daily

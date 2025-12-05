@@ -1,0 +1,145 @@
+# Pipeline Configuration File
+# This file controls all aspects of the data pipeline
+
+# Data Sources Configuration
+data_sources:
+  # Primary source (currently implemented)
+  primary:
+    name: "yahoo_finance"
+    enabled: true
+    
+  # Secondary sources for validation (to be implemented)
+  secondary:
+    - name: "alpha_vantage"
+      enabled: false
+      api_key: "YOUR_API_KEY_HERE"
+    
+    - name: "twelve_data"
+      enabled: false
+      api_key: "YOUR_API_KEY_HERE"
+
+# Asset Configuration
+assets:
+  stocks:
+    - "AAPL"
+    - "MSFT"
+    - "GOOGL"
+    - "AMZN"
+    - "TSLA"
+    - "JPM"
+    - "JNJ"
+  
+  crypto:
+    - "BTC-USD"
+    - "ETH-USD"
+    - "BNB-USD"
+    - "SOL-USD"
+  
+  bonds_etfs:
+    - "AGG"
+    - "TLT"
+    - "SPY"
+
+# Date Range Configuration
+date_range:
+  # Default date range for analysis
+  start_date: "2023-06-01"
+  end_date: "2023-12-31"
+  
+  # Predefined periods
+  periods:
+    six_months: 180
+    one_year: 365
+    two_years: 730
+    five_years: 1825
+    ten_years: 3650
+
+# Portfolio Configuration
+portfolios:
+  traditional:
+    name: "Traditional Portfolio"
+    allocation:
+      stocks: 0.60
+      bonds: 0.40
+      crypto: 0.00
+  
+  crypto_enhanced:
+    name: "Crypto-Enhanced Portfolio"
+    allocation:
+      stocks: 0.50
+      bonds: 0.30
+      crypto: 0.20
+
+# Data Validation Configuration
+validation:
+  # Enable multi-source validation
+  enabled: false  # Set to true when multiple sources are configured
+  
+  # Tolerance for price differences between sources (percentage)
+  price_tolerance: 0.05  # 5%
+  
+  # Minimum correlation between sources
+  min_correlation: 0.95
+  
+  # Statistical tests to perform
+  tests:
+    - "price_comparison"
+    - "volume_comparison"
+    - "correlation_check"
+    - "descriptive_stats"
+  
+  # What to do when validation fails
+  on_failure: "warn"  # Options: "warn", "error", "use_primary"
+
+# Data Processing Configuration
+processing:
+  # Missing data handling
+  missing_data:
+    method: "ffill"  # Options: "ffill", "bfill", "interpolate", "drop"
+  
+  # Outlier detection
+  outliers:
+    enabled: true
+    method: "iqr"  # Options: "iqr", "zscore"
+    threshold: 3.0
+  
+  # Returns calculation
+  returns:
+    method: "log"  # Options: "log", "simple"
+
+# Metrics Configuration
+metrics:
+  risk_free_rate: 0.02  # 2% annual risk-free rate
+  periods_per_year: 252  # Trading days per year
+  
+  # Metrics to calculate
+  calculate:
+    - "annualized_return"
+    - "annualized_volatility"
+    - "sharpe_ratio"
+    - "sortino_ratio"
+    - "max_drawdown"
+    - "var_95"
+    - "cvar_95"
+
+# Output Configuration
+output:
+  # Where to save processed data
+  processed_data_dir: "data/processed"
+  
+  # Where to save raw data
+  raw_data_dir: "data/raw"
+  
+  # Where to save validation reports
+  validation_reports_dir: "data/validation"
+  
+  # File formats
+  formats:
+    - "parquet"
+    - "csv"
+
+# Logging Configuration
+logging:
+  level: "INFO"  # Options: "DEBUG", "INFO", "WARNING", "ERROR"
+  file: "logs/pipeline.log"
+  console: true
