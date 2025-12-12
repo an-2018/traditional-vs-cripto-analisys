@@ -8,6 +8,7 @@ dependencies = [
     "arch>=8.0.0",
     "ccxt>=4.5.24",
     "jupyter>=1.1.1",
+    "jupytext>=1.18.1",
     "matplotlib>=3.10.7",
     "numpy>=2.3.5",
     "pandas>=2.3.3",
